@@ -1,0 +1,137 @@
+{
+  "seller": [
+    {
+      "username": "priya",
+      "email": "priya@123",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "username": "priya",
+      "email": "priya@123",
+      "password": "1234",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "infinix Note 12 pro",
+      "price": "16000",
+      "color": "blue",
+      "category": "Mobile",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.WPCXuz8yEfqVmhz0X83O1QHaJy&pid=Api&P=0",
+      "description": "good product",
+      "id": 1
+    },
+    {
+      "name": "samsung",
+      "price": "15000",
+      "color": "white",
+      "category": "Mobile",
+      "image": "https://tse2.mm.bing.net/th?id=OIP.dUFRrY3eoSQRHYUEmyx3bQHaFj&pid=Api&P=0",
+      "description": "good camera and storage and large display",
+      "id": 2
+    },
+    {
+      "name": "xiomi",
+      "price": "16000",
+      "color": "red",
+      "category": "Mobile",
+      "image": "https://tse2.mm.bing.net/th?id=OIP.OKNluvWT9WMe-9hakem70QHaHV&pid=Api&P=0",
+      "description": "good camera and storage",
+      "id": 3
+    },
+    {
+      "name": "Asus laptop",
+      "price": "100000",
+      "color": "black",
+      "category": "laptop",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.q6YmIA-h_zO2RPSgmopKHgHaGF&pid=Api&P=0",
+      "description": "laptop with charger",
+      "id": 4
+    },
+    {
+      "name": "Dell laptop",
+      "price": "1200000",
+      "color": "black",
+      "category": "laptop",
+      "image": "https://tse3.mm.bing.net/th?id=OIP.sJpm1e7h3r3WIrLnwbs_MQHaE8&pid=Api&P=0",
+      "description": "laptop with charger",
+      "id": 5
+    },
+    {
+      "name": "Watch",
+      "price": "10000",
+      "color": "pink",
+      "category": "smart watch",
+      "image": "https://tse3.mm.bing.net/th?id=OIP.mnDIqrmbmexb22u_SYyKaQHaHa&pid=Api&P=0",
+      "description": "good  quality",
+      "id": 6
+    },
+    {
+      "name": "Neck  Band",
+      "price": "2000",
+      "color": "blue",
+      "category": "Headphone",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.0Es-Okn9JDbf83jwF5ea7AHaHa&pid=Api&P=0",
+      "description": "nice headphone",
+      "id": 7
+    },
+    {
+      "name": "Headset",
+      "price": "30000",
+      "color": "red",
+      "category": "Neck Band",
+      "image": "https://tse2.mm.bing.net/th?id=OIP.uIv76JOiFEQT4PVKdJgWWQHaIO&pid=Api&P=0",
+      "description": "nice",
+      "id": 8
+    }
+  ],
+  "user": [
+    {
+      "username": "darksha",
+      "email": "darksha@user.com",
+      "password": "darksha1234",
+      "id": 1
+    },
+    {
+      "username": "Ekta",
+      "email": "Ekta@user.com",
+      "password": "ekt123",
+      "id": 2
+    },
+    {
+      "username": "abc",
+      "email": "abc@user.com",
+      "password": "abc12",
+      "id": 3
+    }
+  ],
+  "cart": [
+    {
+      "name": "samsung",
+      "price": "15000",
+      "color": "white",
+      "category": "Mobile",
+      "image": "https://tse2.mm.bing.net/th?id=OIP.dUFRrY3eoSQRHYUEmyx3bQHaFj&pid=Api&P=0",
+      "description": "good camera and storage and large display",
+      "quantity": 3,
+      "productId": 2,
+      "userId": null,
+      "id": 4
+    },
+    {
+      "name": "Asus laptop",
+      "price": "100000",
+      "color": "black",
+      "category": "laptop",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.q6YmIA-h_zO2RPSgmopKHgHaGF&pid=Api&P=0",
+      "description": "laptop with charger",
+      "quantity": 1,
+      "productId": 4,
+      "userId": null,
+      "id": 5
+    }
+  ],
+  "orders": []
+}

@@ -1,0 +1,17 @@
+table{
+    text-align: center;
+    color: blueviolet;
+}
+table th , table td{
+    border: 1px solid blueviolet;
+    padding: 10px;
+    width: 160px;
+}
+.product-list p{
+    color: green;
+    text-align: center;
+}
+.adjust-icon{
+    margin-right: 10px;
+    color: blueviolet;
+}

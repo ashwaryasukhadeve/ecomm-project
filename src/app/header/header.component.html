@@ -1,0 +1,65 @@
+<nav class="nav">
+    <h1>
+        <a routerLink="">E-COMM</a>
+    </h1>
+    <div *ngIf="MenuType!=='seller'" class="input-search">
+        <input type="text" #searchinput (keyup)="searchProduct($event)" (blur)="hideSearch()"  placeholder="Search">
+        <button (click)="submitSearch(searchinput.value)">Search</button>
+        <ul class="suggedted-result" *ngIf="searchResult">
+            <li *ngFor="let item of searchResult">
+                <a (mousedown)="redircttoDetails(item.id)">
+                    {{item.name}}
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div [ngSwitch]="MenuType">
+        <ul *ngSwitchCase="'default'">
+            <li>
+                <a routerLink="">HOME</a>
+            </li>
+            <li>
+                <a routerLink="seller-auth">SELLER</a>
+            </li>
+            <li>
+                <a routerLink="/user-auth">LOGIN/SIGNUP</a>
+            </li>
+            <li>
+                <a [routerLink]="cartitems>0?'cart':null">CART({{cartitems}})</a>
+            </li>
+        </ul>
+        <ul *ngSwitchCase="'user'">
+            <li>
+                <a routerLink="">HOME</a>
+            </li>
+            <li>
+                <a routerLink="seller-auth">SELLER</a>
+            </li>
+            <li>
+            <a >{{userName|titlecase}}</a>
+            </li>
+            <li>
+                <a routerLink="my-orders">MY ORDER</a>
+            </li>
+            <li>
+                <a (click)="userlogout()">LOGOUT</a>
+            </li>
+            <li>
+                <a routerLink="/cart">CART({{cartitems}})</a>
+            </li>
+        </ul>
+        <ul *ngSwitchCase="'seller'">
+            <li>
+                <a routerLink="seller-add-product">ADD PRODUCT</a>
+            </li>
+            <li>
+                <a routerLink="seller-home">PRODUCT LIST</a>
+            </li>
+            <li>
+                <a routerLink="seller auth">LOGOUT</a>
+            </li>
+            <li>
+            <li><a href="#">{{sellerName | titlecase}}</a></li>
+        </ul>
+    </div>
+</nav>

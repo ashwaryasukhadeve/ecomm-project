@@ -1,0 +1,42 @@
+.cart-page{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.cart-page h1{
+  text-align: center;
+  color: blueviolet;
+}
+.details{
+    border: 1px solid #ddd;
+}
+.cart-page .details img{
+    height: 100px;
+}
+.details ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.summery{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.summery h3{
+    text-align: center;
+    color: blueviolet;
+}
+.summery ul{
+    list-style-type: none;
+    padding: 5%;
+    border: 1px solid #ddd;
+}
+.summery ul li{
+    display: flex;
+    justify-content: space-between;
+}

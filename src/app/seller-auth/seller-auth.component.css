@@ -1,0 +1,15 @@
+.signup, .login{
+    text-align: center;
+}
+.signup h2,.login h2{
+    margin-bottom:50px;
+    margin-top: 50px;
+    color: blueviolet;
+}
+.signup a, .login a{
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    color: blueviolet;
+    text-align: left;
+}

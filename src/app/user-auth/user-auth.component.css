@@ -1,0 +1,15 @@
+.user-signup, .user-login{
+    text-align: center;
+}
+.user-signup h1,.user-login h1{
+    margin-bottom:50px;
+    margin-top: 50px;
+    color: blueviolet;
+}
+.user-signup a, .user-login a{
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    color: blueviolet;
+    text-align: left;
+}

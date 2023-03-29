@@ -1,0 +1,19 @@
+<div class="checkout-page">
+    <h1>CHECKOUT</h1>
+    <p style="color: green;text-align: center;">{{orderMsg}}</p>
+    <div class="row">
+        <div class="col-sm-7 shipping-address">
+            <h3>Add Shipping Address:</h3>
+            <form #orderdata="ngForm" class="form">
+                <input type="text" class="input" name="email" ngModel placeholder="Enter Your Email Address">
+                <input type="number" class="input" name="contact" ngModel placeholder="Enter Your Contact Details">
+                <textarea name="address" class="input" cols="30" rows="2" ngModel placeholder="Enter Your Address"></textarea>
+                <button class="input-button" (click)="orderNow(orderdata.value)">Order Now</button>
+            </form>
+        </div>
+        <div class="col-sm-5">
+            <h3>Total Amount:{{totalprice}}</h3>
+            <h4>Payment Mode: <b>Cash On Delivery</b></h4>
+        </div>
+    </div>
+</div>

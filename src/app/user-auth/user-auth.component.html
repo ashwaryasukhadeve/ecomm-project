@@ -1,0 +1,24 @@
+<div class="user-auth">
+    <div *ngIf="!showlogin" class="user-signup">
+        <h1>USER SIGN UP</h1>
+        <form  class="form" #usersignup="ngForm">
+            <input type="text" class="input" name="username" ngModel placeholder="Enter Your Username">
+            <input type="email" class="input" name="email" ngModel placeholder="Enter Your Email Address">
+            <input type="password" class="input" name="password" ngModel placeholder="Enter Your password">
+            <button class="input-button" (click)="UserSignup(usersignup.value)">SIGN UP</button>
+        </form>
+        <a (click)="openlogin()">Aready Have A Acount? Click Here</a>
+    </div>
+    <div *ngIf="showlogin" class="user-login">
+        <h1>USER LOGIN</h1>
+        <form  class="form" #userlogin="ngForm">
+            <p style="color: red;">{{userAuthError}}</p>
+            <input type="email" #email="ngModel" required email="" class="input" name="email" ngModel placeholder="Enter Your Email Address">
+            <p class="invalid-input"><span *ngIf="email.invalid && email.touched"> Please Enter Valid Email</span></p>
+            <input type="password" class="input" name="password" #password="ngModel" required minlength="2" maxlength="10" ngModel placeholder="Enter Your password">
+            <p class="invalid-input"><span *ngIf="password.invalid && password.touched"> Please Enter Valid Password</span></p>
+            <button [disabled]="userlogin.invalid" class="input-button" (click)="UserLogin(userlogin.value)">LOG IN</button>
+        </form>
+        <a (click)="opensignup()"> Won't to Crete Acount? Click Here</a>
+    </div>
+</div>
